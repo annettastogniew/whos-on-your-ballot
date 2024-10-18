@@ -1,5 +1,5 @@
 <script>
-  import data from "./assets/data/all-data.json";
+  import data from "./data/all-data.json";
   import SearchResults from "./lib/SearchResults.svelte";
   import SearchBar from "./lib/SearchBar.svelte";
   import { allCandidateData, mobile } from "./lib/stores";
@@ -30,7 +30,7 @@
 
   // get market from url (or default for local development)
   if (url == "http://localhost:5173/") {
-    market = "IL";
+    market = "FL";
   } else {
     market = url.match(/index\.html\?market=(.*)/)[1];
   }
